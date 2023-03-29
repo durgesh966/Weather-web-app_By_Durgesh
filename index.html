@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap file -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- css file -->
+  <link rel="stylesheet" href="css/stylle.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"
+    integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- end -->
+  <!-- google font-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <!-- end -->
+
+
+  <title>Weather Web App By Durgesh Thakur</title>
+</head>
+
+<body>
+
+  <!-- cursole  -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/1.jpg" class="d-block w-100" style="height: 100vh;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="image/2.jpg" class="d-block w-100" style="height: 100vh;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="image/3.jpg" class="d-block w-100" style="height: 100vh;" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="image/4.jpg" class="d-block w-100" style="height: 100vh;" alt="...">
+      </div>
+
+      <!-------------------- input form ------------------------------>
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+
+          <div class="container-fluid  main_content">
+
+            <form class="temp_form ">
+
+              <input type="text" id="cityName" placeholder="Enter you city name.." autocomplete="off">
+              <br>
+              <input type="submit" value="search" id="submitBtn">
+              <p id="temp_err"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!---------------------- end   ----------------------------->
+
+      <!--------------- weather info container ------------------------------------>
+      <div class="main container">
+        <h4 class="date"><i class="fa-regular fa-clock"></i> <span id="date"></span></h4>
+        <h1 id="temp_status" class="sun"><i class="fa-solid fa-sun"></i></h1>
+        <h6 id="discription"></h6>
+        <h1 class="wind"><span id="wind_speed"></span><i id="windico" class="fa-solid fa-wind"></i></h1>
+        <h1 class="city"><i class="fa fa-location"></i><span id="city_name"></span></h1>
+        <h1 class="temp"><span id="temp_real_val"></span> ℃</h1>
+      </div>
+      <!----------------------------- end --------------------------------------->
+
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+
+  </div>
+  <!-- end -->
+
+
+
+  <!-- javascript file  -->
+  <script src="js/weather.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
